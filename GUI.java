@@ -63,16 +63,14 @@ public class GUI {
     }
 
     public static int getInput() {
-        int temp;
 
         try {
-            temp = Integer.parseInt(eingabeField.getText());
+            return Integer.parseInt(eingabeField.getText());
         } catch (NumberFormatException e) {
             //System.out.println("NO VALID NUMBER/YEAR");
-            temp = 0;
+            return 0;
         }
-
-        return temp;
+        
     }
 
     public static void resetInputField() {
